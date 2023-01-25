@@ -1,0 +1,23 @@
+.layout {
+  display: grid;
+  grid-template-columns: 100px auto;
+  column-gap: 20px;
+}
+
+.sidebar {
+  background: papayawhip;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main {
+  background: cornflowerblue;
+  height: 100vh;
+}
+
+.social {
+  width: 100px;
+  background: cornflowerblue;
+}
