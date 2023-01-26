@@ -5,9 +5,9 @@ import { Link } from "../../common/link";
 import { ReactComponent as EmailIcon } from "../../../assets/icons/envelope-solid.svg";
 import { ReactComponent as CellIcon } from "../../../assets/icons/mobile-solid.svg";
 
-const icons = "h-6 w-6 fill-white";
-const row = "flex flex-row gap-x-3 items-center cursor-pointer";
-const span = "truncate w-w200";
+export const icons = "h-6 w-6 fill-white";
+export const row = "flex flex-row gap-x-3 items-center cursor-pointer";
+export const span = "truncate w-w200";
 
 export const Contact = () => {
   return (
