@@ -22,6 +22,7 @@ module.exports = {
         darkgreen: "#17a096",
         lightgreen: "#63e6be",
         headergray: "#eeeeee",
+        bar: "#2f3d4f",
       },
     },
   },
