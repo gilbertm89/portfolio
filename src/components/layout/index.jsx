@@ -9,7 +9,7 @@ export default function Layout() {
       <Sidebar />
       <div className="h-h100vh overflow-hidden">
         <Header />
-        {/* <Content /> */}
+        <Content />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ export const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full bg-headergray p-8 flex flex-col gap-y-4 justify-start">
+    <div className="w-full bg-headergray px-10 py-8 flex flex-col gap-y-4 justify-start">
       <div className="flex flex-col gap-y-2">
         <h1 className="text-3xl font-bold">
           {"Gilbert Adrian Mengana de la Fé"}
