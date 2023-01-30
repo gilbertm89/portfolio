@@ -1,14 +1,9 @@
 import "./styles.css";
 
-import Layout from "./layout";
-import { Fragment } from "react";
+import { Layout } from "../github/layout/index";
 
 function App() {
-  return (
-    <Fragment>
-      <Layout />
-    </Fragment>
-  );
+  return <Layout />;
 }
 
 export default App;

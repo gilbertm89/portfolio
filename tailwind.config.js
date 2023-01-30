@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        "3xl": "0 0px 18px 13px rgb(79 51 99)",
+      },
       height: {
         h100: "100px",
         h100vh: "100vh",
