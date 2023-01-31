@@ -21,16 +21,16 @@ export const ContactSection = () => {
     <div className="flex flex-col gap-y-16">
       <div className="flex flex-col items-start gap-y-6 text-justify">
         <h1 className="text-[96px] text-white leading-[100px] font-semibold">
-          {t("I am Gilbert")}
+          {t("Hi I'm Gilbert")}
         </h1>
         <p className="text-[32px] text-[#8B949E] leading-[44px]">
           {t("cover")}
         </p>
       </div>
 
-      <div className="flex justify-start gap-x-6">
+      <div className="relative h-[61px] w-[470px]">
         <Link href="http://localhost:3000/resume-gilbert.pdf">
-          <div className="border border-[#6639ba] rounded hover:shadow-2xl hover:shadow-[#6639ba] hover:border-2 py-4 px-5">
+          <div className="absolute left-0 border border-[#6639ba] rounded hover:shadow-2xl hover:shadow-[#6639ba] hover:border-2 py-4 px-5">
             <div className="flex justify-center items-center gap-x-3">
               <UserIcon className="w-6 h-6 fill-white" />
               <span className="text-lg text-white">
@@ -39,7 +39,8 @@ export const ContactSection = () => {
             </div>
           </div>
         </Link>
-        <div className="border border-[#6639ba] rounded hover:shadow-2xl hover:shadow-[#6639ba] hover:border-2 py-4 px-5 cursor-pointer">
+
+        <div className="absolute right-0 border border-[#6639ba] rounded hover:shadow-2xl hover:shadow-[#6639ba] hover:border-2 py-4 px-5 cursor-pointer">
           <div className="flex justify-center items-center gap-x-3">
             <BriefcaseIcon className="w-6 h-6 fill-white" />
             <span className="text-lg text-white">{t("My projects")}</span>
@@ -75,9 +76,9 @@ export const ContactSection = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-y-10">
+      <div className="flex flex-col gap-y-8">
         <p className="text-[#6E7681] text-[16px] leading-[24px]">
-          {t("What magic is made with")}
+          {t("What is magic made of")}
         </p>
         <div className="flex justify-start gap-x-10">
           <Chip label="HTML 5" icon={<HtmlLogo />} />
