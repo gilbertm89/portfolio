@@ -13,6 +13,11 @@ import { ReactComponent as ReactLogo } from "../../assets/icons/react.svg";
 import { ReactComponent as JavascriptLogo } from "../../assets/icons/javascript.svg";
 import { ReactComponent as HtmlLogo } from "../../assets/icons/html.svg";
 import { ReactComponent as CssLogo } from "../../assets/icons/css.svg";
+import { ReactComponent as NextLogo } from "../../assets/icons/nextjs.svg";
+import { ReactComponent as ReduxLogo } from "../../assets/icons/redux.svg";
+import { ReactComponent as SagaLogo } from "../../assets/icons/saga.svg";
+import { ReactComponent as TailwindLogo } from "../../assets/icons/tailwind.svg";
+import { ReactComponent as MaterialUILogo } from "../../assets/icons/material.svg";
 
 export const ContactSection = () => {
   const { t } = useTranslation();
@@ -80,11 +85,16 @@ export const ContactSection = () => {
         <p className="text-[#6E7681] text-[16px] leading-[24px]">
           {t("What is magic made of")}
         </p>
-        <div className="flex justify-start gap-x-10">
-          <Chip label="HTML 5" icon={<HtmlLogo />} />
-          <Chip label="CSS 3" icon={<CssLogo />} />
-          <Chip label="Javascript" icon={<JavascriptLogo />} />
-          <Chip label="ReactJS" icon={<ReactLogo />} />
+        <div className="flex flex-wrap justify-start gap-x-10 gap-y-5">
+          <Chip label="HTML 5" icon={<HtmlLogo />} stroke="#54d062" />
+          <Chip label="CSS 3" icon={<CssLogo />} stroke="#54d062" />
+          <Chip label="Javascript" icon={<JavascriptLogo />} stroke="#54d062" />
+          <Chip label="ReactJS" icon={<ReactLogo />} stroke="#54d062" />
+          <Chip icon={<NextLogo />} fill="#54d062" width="60px" />
+          <Chip label="Redux" icon={<ReduxLogo />} fill="#54d062" />
+          <Chip label="Redux-Saga" icon={<SagaLogo />} />
+          <Chip label="tailwindcss" icon={<TailwindLogo />} fill="#54d062" />
+          <Chip label="Material-UI" icon={<MaterialUILogo />} />
         </div>
       </div>
     </div>
