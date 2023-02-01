@@ -18,6 +18,8 @@ import { ReactComponent as ReduxLogo } from "../../assets/icons/redux.svg";
 import { ReactComponent as SagaLogo } from "../../assets/icons/saga.svg";
 import { ReactComponent as TailwindLogo } from "../../assets/icons/tailwind.svg";
 import { ReactComponent as MaterialUILogo } from "../../assets/icons/material.svg";
+import { ReactComponent as JavaLogo } from "../../assets/icons/java.svg";
+import { ReactComponent as SpringLogo } from "../../assets/icons/spring.svg";
 
 export const ContactSection = () => {
   const { t } = useTranslation();
@@ -95,6 +97,8 @@ export const ContactSection = () => {
           <Chip label="Redux-Saga" icon={<SagaLogo />} />
           <Chip label="tailwindcss" icon={<TailwindLogo />} fill="#54d062" />
           <Chip label="Material-UI" icon={<MaterialUILogo />} />
+          <Chip label="Java" icon={<JavaLogo />} />
+          <Chip icon={<SpringLogo />} width="75px" />
         </div>
       </div>
     </div>
