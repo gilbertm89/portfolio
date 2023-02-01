@@ -4,7 +4,8 @@ export const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col mt-[185px] text-left">
+    <div className="flex flex-col mt-[120px] gap-y-6 text-left">
+      <h3 className="text-white text-[24px] font-medium">{t("Portfolio")}</h3>
       <h2 className="text-white font-medium text-[48px] leading-[52px]">
         <span className="text-[#7ee787]">
           {t("I introduce you some of my projects.")}

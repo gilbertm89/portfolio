@@ -18,12 +18,12 @@ export const Layout = () => {
         </Fragment>
 
         <Fragment>
-          <div className="relative">
+          <Fragment>
             <PortfolioIcon className="w-6 h-5 rounded-md shadow-3xl fill-white bg-[#2b4a34] shadow-[#2b4a34]" />
-            <h3 className="absolute text-white left-[72px] top-0 text-[24px] font-medium">
+            {/* <h3 className="absolute text-white left-[72px] top-0 text-[24px] font-medium">
               {t("Portfolio")}
-            </h3>
-          </div>
+            </h3> */}
+          </Fragment>
           <div className="w-[3px] h-[300px] rounded-full bg-gradient-to-b from-[#54d062] to-[#11231d]" />
           {/*
           <ContactIcon className="w-6 h-5 rounded-md shadow-3xl fill-white bg-[#472f5a]" />
