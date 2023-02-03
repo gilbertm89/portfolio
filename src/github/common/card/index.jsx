@@ -2,7 +2,7 @@ import "./index.styles.jsx";
 import { useState } from "react";
 import { Container } from "./index.styles.jsx";
 
-export const Card = ({ gradientColor = "red" }) => {
+export const Card = ({ gradientColor = "red", children = null }) => {
   const [x, setX] = useState(null);
   const [y, setY] = useState(null);
 
@@ -25,7 +25,7 @@ export const Card = ({ gradientColor = "red" }) => {
         }}
         background={gradientColor}
       >
-        <div className="relative">Hover me</div>
+        <div className="relative">{children}</div>
       </Container>
     </div>
   );

@@ -16,6 +16,6 @@ export const Container = styled.div`
   }
 
   &:hover:before {
-    --size: 200px;
+    --size: 100vb;
   }
 `;
