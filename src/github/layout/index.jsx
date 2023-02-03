@@ -4,6 +4,7 @@ import { ContactSection } from "../contact-section";
 import { ReactComponent as PortfolioIcon } from "../../assets/icons/briefcase-solid.svg";
 import { useTranslation } from "react-i18next";
 import { Header } from "../projects-section/header";
+import { Card } from "../common/card";
 
 export const Layout = () => {
   const { t } = useTranslation();
@@ -34,6 +35,7 @@ export const Layout = () => {
       <div className="flex flex-col grow px-12">
         <ContactSection />
         <Header />
+        <Card />
       </div>
     </div>
   );
