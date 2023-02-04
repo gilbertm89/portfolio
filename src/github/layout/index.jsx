@@ -5,6 +5,7 @@ import { ReactComponent as PortfolioIcon } from "../../assets/icons/briefcase-so
 import { useTranslation } from "react-i18next";
 import { Header } from "../projects-section/header";
 import { Card } from "../common/card";
+import { Todobienes } from "../todobienes";
 
 export const Layout = () => {
   const { t } = useTranslation();
@@ -35,7 +36,15 @@ export const Layout = () => {
       <div className="flex flex-col grow px-12">
         <ContactSection />
         <Header />
-        <Card />
+        <Card
+          gradientColor="#163724"
+          style={{
+            padding: 0,
+          }}
+        >
+          <Todobienes />
+        </Card>
+        {/* <Card gradientColor="#1b224a" /> */}
       </div>
     </div>
   );

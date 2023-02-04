@@ -2,7 +2,11 @@ import "./index.styles.jsx";
 import { useState } from "react";
 import { Container } from "./index.styles.jsx";
 
-export const Card = ({ gradientColor = "red", children = null }) => {
+export const Card = ({
+  gradientColor = "red",
+  children = null,
+  ...othersProps
+}) => {
   const [x, setX] = useState(null);
   const [y, setY] = useState(null);
 
@@ -17,7 +21,7 @@ export const Card = ({ gradientColor = "red", children = null }) => {
   return (
     <div className="overflow-hidden rounded-[8px] z-10 p-6">
       <Container
-        className="bg-[#161b22] rounded-[8px] border border-[#454c6d] p-6 relative overflow-hidden"
+        className="bg-[#161b22] rounded-[8px] border border-[#454c6d] relative overflow-hidden"
         onMouseMove={handleOnMouseMove}
         style={{
           "--x": x,
