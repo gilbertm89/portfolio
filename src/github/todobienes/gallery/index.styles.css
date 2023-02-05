@@ -1,20 +1,20 @@
 .sectionRoot {
   display: flex;
-  width: 600px;
-  height: 430px;
+  width: 100%;
+  height: 100%;
 }
 
 .sectionRoot img {
   width: 0px;
   flex-grow: 1;
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.4;
   transition: 0.5s ease;
 }
 
 .sectionRoot img:hover {
   cursor: crosshair;
-  width: 300px;
+  width: 450px;
   opacity: 1;
-  filter: contrast(120%);
+  /* filter: contrast(120%); */
 }
