@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import { Header } from "../projects-section/header";
 import { Card } from "../common/card";
 import { Todobienes } from "../todobienes";
+import { EasyPermit } from "../easy-permit";
 
 export const Layout = () => {
   const { t } = useTranslation();
@@ -44,7 +45,14 @@ export const Layout = () => {
         >
           <Todobienes />
         </Card>
-        {/* <Card gradientColor="#1b224a" /> */}
+        <Card
+          gradientColor="#352426"
+          style={{
+            padding: 0,
+          }}
+        >
+          <EasyPermit />
+        </Card>
       </div>
     </div>
   );
