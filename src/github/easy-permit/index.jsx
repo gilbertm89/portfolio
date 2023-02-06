@@ -1,4 +1,3 @@
-import { Link } from "../../components/common/link";
 import { VideoPlayer } from "../easy-permit/video-player";
 
 export const EasyPermit = () => {
